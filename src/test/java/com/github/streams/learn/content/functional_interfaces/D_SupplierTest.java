@@ -9,27 +9,27 @@ import org.junit.jupiter.api.Test;
 class D_SupplierTest {
   /** Write a lambda expression that returns a new StringBuilder containing the string "abc". */
   @Test
-  @Disabled
+  // @Disabled
   public void d_supplier1() {
-    Supplier<StringBuilder> sup = null; // TODO
+      Supplier<StringBuilder> sup = () -> new StringBuilder("abc"); 
 
     assertEquals("abc", sup.get().toString());
   }
 
   /** Write a lambda expression that returns a new, empty StringBuilder. */
   @Test
-  @Disabled
+  // @Disabled
   public void d_supplier2() {
-    Supplier<StringBuilder> sup = null; // TODO
+      Supplier<StringBuilder> sup = () -> new StringBuilder();
 
     assertEquals("", sup.get().toString());
   }
 
   /** Write a constructor reference that returns a new, empty StringBuilder. */
   @Test
-  @Disabled
+  // @Disabled
   public void d_supplier3() {
-    Supplier<StringBuilder> sup = null; // TODO
+      Supplier<StringBuilder> sup = StringBuilder::new;
 
     assertEquals("", sup.get().toString());
   }
